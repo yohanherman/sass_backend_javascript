@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*les varaiables */
+:root {
+  --text-color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+}
+.container .container-menu {
+  flex: 1;
+  background-color: beige;
+  left: 10px;
+}
+.container .container-mainpage {
+  background-image: url(/images/fond.jpeg);
+  background-size: cover;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .container-mainpage > #logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 70%;
+  margin-bottom: 40px;
+}
+.container .container-mainpage > h1 {
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+.container .container-mainpage > p {
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.navbar > ul {
+  list-style: none;
+}
+.navbar > ul > li {
+  margin-top: 40px;
+}
+.navbar > ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.1s ease-out;
+}
+.navbar > ul a:hover {
+  background: #000;
+  color: var(--text-color);
+  padding: 5px;
+}
+
+.titre1 {
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 7px rgb(46, 46, 1);
+}
+
+.paragraphe {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.section1 .images .img {
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 0 0 7px rgb(46, 46, 1);
+  margin-top: 30px;
+  transition: all 0.5s ease-out;
+}
+.section1 .images .img.img:hover {
+  transform: scale(1.2);
+}
+.section1 .images .paraImage {
+  margin-top: 25px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-top: 30px;
+}
+.section2 .cards {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: auto;
+  box-shadow: 0 0 5px rgb(46, 46, 1);
+  padding: 10px;
+}
+.section2 .cards > p {
+  text-align: justify;
+  margin-top: 25px;
+}
+.section2 .cards > h3 {
+  margin-top: 25px;
+  color: rgb(131, 0, 131);
+}
+.section2 .cards .imageSection2 {
+  height: 70px;
+  width: 70px;
+  margin-top: -40px;
+  border-radius: 100%;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-direction: column;
+  background-color: beige;
+}
+.section3 > form {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  width: 500px;
+}
+.section3 h4 {
+  color: purple;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section3 label {
+  display: block;
+}
+.section3 input,
+.section3 textarea {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 15px 0;
+  outline: none;
+}
+.section3 button {
+  display: block;
+  width: 350px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: auto;
+}
+
+footer {
+  background-image: url(/images/fond.jpeg);
+  background-size: cover;
+  color: var(--text-color);
+  height: 50vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h5 {
+  text-align: center;
+}
+footer .icon-elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 80px;
+}
+footer .icon-elem i {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
