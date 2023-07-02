@@ -21,12 +21,12 @@
     <div class="container">
       <div class="container-menu">
         <nav class="navbar">
-          <ul>
-            <li><a href="">Acceuil</a></li>
-            <li><a href="">Gallerie</a></li>
-            <li><a href="">Expert</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
+          <div class=menutoggle onclick="togglemenu()"></div>
+          <ul class="ul">
+            <li><a href="#" >Acceuil</a></li>
+            <li><a href="#section1" >Gallerie</a></li>
+            <li><a href="#section2" >Expert</a></li>
+            <li><a href="#section3" >Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -51,7 +51,7 @@
       maxime voluptatibus ullam id possimus molestiae debitis, delectus nesciunt
     </p>
 
-    <section class="section1">
+    <section class="section1" id="section1">
       <div class="images">
         <img src="./images/image1.jpg" alt="illustration" class="img" />
         <p class="paraImage">Lorem ipsum dolor sit amet.</p>
@@ -92,15 +92,9 @@
         <p class="paraImage">Lorem ipsum dolor sit amet.</p>
       </div>
     </section>
-
-    <p class="paragraphcom">
-      souhaitez-vous laisser un commentaire par rapport a la gallerie?? cliquer
-      sur le boutton
-    </p>
-    <button class="btn">laisser un commentaire</button>
-
+    
     <h2 class="titre1">nos Experts</h2>
-    <section class="section2">
+    <section class="section2" id="section2">
       <div class="cards">
         <img src="./images/gates.jpg" alt="bill" class="imageSection2" />
         <h3>BILL GATES</h3>
@@ -134,7 +128,7 @@
 
     <h2 class="titre1">Nous contacter</h2>
 
-    <section class="section3">
+    <section class="section3" id="section3">
       <form action="#">
         <h4>formulaire de contact</h4>
         <div>

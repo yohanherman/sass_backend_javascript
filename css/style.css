@@ -18,7 +18,7 @@
 }
 .container .container-menu {
   flex: 1;
-  background-color: beige;
+  background-color: #fff;
   left: 10px;
 }
 .container .container-mainpage {
@@ -81,6 +81,7 @@
   margin-top: 30px;
   padding: 20px;
   text-align: center;
+  color: purple;
 }
 
 .section1 {
@@ -203,6 +204,19 @@ footer .icon-elem {
 footer .icon-elem i {
   margin-right: 10px;
   font-size: 2rem;
+}
+
+.container-menu.disappear {
+  background-color: #000;
+  transition: all 0.7s ease-out;
+}
+.container-menu.disappear a {
+  color: white;
+  font-weight: 700;
+}
+.container-menu.disappear a:hover {
+  color: #000;
+  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

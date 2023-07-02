@@ -19,8 +19,7 @@
 
   .container-menu {
     flex: 1;
-    background-color: beige;
-
+    background-color: #fff;
     left: 10px;
   }
 
@@ -92,6 +91,7 @@
   margin-top: 30px;
   padding: 20px;
   text-align: center;
+  color: purple;
 }
 
 .section1 {
@@ -230,5 +230,20 @@ footer {
       margin-right: 10px;
       font-size: 2rem;
     }
+  }
+}
+
+.container-menu.disappear {
+  background-color: #000;
+  transition: all 0.7s ease-out;
+
+  a {
+    color: white;
+    font-weight: 700;
+  }
+
+  & a:hover {
+    color: #000;
+    background: #fff;
   }
 }
